@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.name         = "LmMobSDK-Demo"                #存储库名称
   s.version      = "1.0.0"                        #版本号，与tag值一致
   s.summary      = "奖励视频广告变现优化"            #简介
-  s.description  = "奖励视频广告变现优化"            #描述          
-  s.homepage     = "https://github.com/chenyihai"  #项目主页，不是git地址
+  s.description  = "LmMobSDK 奖励视频广告变现优化"   #描述          
+  s.homepage     = "https://github.com/chenyihai/LmMobSDK-Demo.git"  #项目主页，不是git地址
 
 
 
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.source_files  = "LmMobSDK-Demo", "LmMobSDK-Demo/**/*.{h,m}"  #需要托管的源代码路径
-  s.public_header_files = "LmMobSDK-Demo/**/LmMobSDK.h"
+  s.public_header_files = "LmMobSDK-Demo/LmMobSDK/Frameworks/LmMobSDK.h"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
