@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LmMobSDK-Demo"
-  s.version      = 1.0.0
+  s.version      = "1.0.0"
   s.summary      = "奖励视频广告变现优化"
 
   # This description is used to generate tags and improve search results.
