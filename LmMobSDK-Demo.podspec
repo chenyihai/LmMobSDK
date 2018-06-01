@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }  #开源协议
+  s.license      = { :type => "MIT", :file => "LICENSE" }   #开源协议
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
