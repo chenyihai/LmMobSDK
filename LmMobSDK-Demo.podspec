@@ -32,6 +32,7 @@ Pod::Spec.new do |s|
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.platform     = :ios, "8.0"   #支持的平台和版本号
+  s.frameworks = "Accelerate.framework", "AdSupport.framework","AudioToolbox.framework","AVFoundation.framework","CFNetwork.framework","CoreGraphics.framework","CoreLocation.framework","CoreTelephony.framework","CoreMedia.framework","CoreMotion.framework","EventKit.framework","Foundation.framework","GLKit.framework","iAd.framework","ImageIO.framework","MediaPlayer.framework","MessageUI.framework","MobileCoreServices.framework","QuartzCore.framework","Security.framework","Social.framework","StoreKit.framework","SystemConfiguration.framework","WatchConnectivity.framework","WebKit.framework","JavaScriptCore.framework","UIKit.framework","libc++.tbd","libsqlite3.tbd","libxml2.tbd","libz.tbd"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
