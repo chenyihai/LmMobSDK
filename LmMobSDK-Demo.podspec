@@ -20,7 +20,8 @@ Pod::Spec.new do |s|
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.license      = { :type => "MIT", :file => "LICENSE" }   #开源协议
+  # s.license      = { :type => "MIT", :file => "LICENSE" }   #开源协议
+  s.license = { :type => 'BSD' }   # 授权协议
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -32,7 +33,9 @@ Pod::Spec.new do |s|
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.platform     = :ios, "8.0"   #支持的平台和版本号
-  s.frameworks = "Accelerate", "AdSupport","AudioToolbox","AVFoundation","CFNetwork","CoreGraphics","CoreLocation","CoreTelephony","CoreMedia","CoreMotion","EventKit","Foundation","GLKit","iAd","ImageIO","MediaPlayer","MessageUI","MobileCoreServices","QuartzCore","Security","Social","StoreKit","SystemConfiguration","WatchConnectivity","WebKit","JavaScriptCore","UIKit"
+
+  s.frameworks = "Accelerate", "AdSupport","AudioToolbox","AVFoundation","CFNetwork","CoreGraphics","CoreLocation","CoreTelephony","CoreMedia","CoreMotion","EventKit","Foundation","GLKit","iAd","ImageIO","MediaPlayer","MessageUI","MobileCoreServices","QuartzCore","Security","Social","StoreKit","SystemConfiguration","WatchConnectivity","WebKit","JavaScriptCore","UIKit"   # 使用到的系统框架
+
 
   s.libraries = "c++","sqlite3","xml2","z"
 
