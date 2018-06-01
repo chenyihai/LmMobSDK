@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LmMobSDK-Demo"
-  s.version      = "1.0.0"
+  s.version      = 1.0.0
   s.summary      = "奖励视频广告变现优化"
 
   # This description is used to generate tags and improve search results.
@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "" => "" }
+  s.author             = { "chenyihai" => "chenyihai.2008@163.com" }
   # Or just: s.author    = "yihai"
   # s.authors            = { "" => "" }
   # s.social_media_url   = "http://twitter.com/"
@@ -64,13 +64,10 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  # s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
+  # s.ios.deployment_target = "8.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +76,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/LmMobSDK-Demo.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/chenyihai/LmMobSDK-Demo.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,10 +87,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "LmMobSDK-Demo", "LmMobSDK-Demo/LmMobSDK/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  # s.public_header_files = "LmMobSDK-Demo/**/LmMobSDK.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
