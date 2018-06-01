@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"                        #版本号，与tag值一致
   s.summary      = "奖励视频广告变现优化"            #简介
   s.description  = "LmMobSDK 奖励视频广告变现优化"   #描述          
-  s.homepage     = "https://github.com/chenyihai/"  #项目主页，不是git地址
+  s.homepage     = "https://github.com/chenyihai"  #项目主页，不是git地址
 
 
 
