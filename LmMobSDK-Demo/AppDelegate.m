@@ -23,7 +23,7 @@
     // 开发者向SDK方申请获取的key， 测试的 eac6500c-33a6-4d8d-afa4-def79935f9c1
     //芝麻互娱 9302013f-7348-4938-995c-1e27a49ce500
     
-    NSString * appkey = @"eac6500c-33a6-4d8d-afa4-def79935f9c1";//请填写实际获取的appkey
+    NSString * appkey = @"9302013f-7348-4938-995c-1e27a49ce500";//请填写实际获取的appkey
     
     //
     [LmMobSDK initialize:appkey callback:^(BOOL success, NSDictionary * _Nullable result) {
