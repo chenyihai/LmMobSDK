@@ -13,15 +13,15 @@ Pod::Spec.new do |s|
   s.name         = "LmMobSDK-Demo"                #存储库名称
   s.version      = "1.0.0"                        #版本号，与tag值一致
   s.summary      = "奖励视频广告变现优化"            #简介
-  s.description  = "LmMobSDK 奖励视频广告变现优化"   #描述          
+  s.description  = "帮助开发者在开发项目时可以通过有效的第三方来更好更快的完善自己的激励视频，实现游戏变现，增加开发者收益。"   #描述          
   s.homepage     = "https://github.com/chenyihai/LmMobSDK-Demo"   #项目主页，不是git地址
 
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  # s.license      = { :type => "MIT", :file => "LICENSE" }   #开源协议
-  s.license = { :type => 'BSD' }   # 授权协议
+  s.license      = { :type => "MIT", :file => "LICENSE" }   #开源协议
+  # s.license = { :type => 'BSD' }   # 授权协议
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
