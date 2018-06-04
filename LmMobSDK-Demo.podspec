@@ -34,8 +34,15 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"   #支持的平台和版本号
 
-  s.frameworks = "Accelerate", "AdSupport","AudioToolbox","AVFoundation","CFNetwork","CoreGraphics","CoreLocation","CoreTelephony","CoreMedia","CoreMotion","EventKit","Foundation","GLKit","iAd","ImageIO","MediaPlayer","MessageUI","MobileCoreServices","QuartzCore","Security","Social","StoreKit","SystemConfiguration","WatchConnectivity","WebKit","JavaScriptCore","UIKit"   # 使用到的系统框架
+  s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
 
+  s.vendored_libraries = 'libLmMobSDK.a'
+
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
+
+  s.frameworks = "Accelerate", "AdSupport","AudioToolbox","AVFoundation","CFNetwork","CoreGraphics","CoreLocation","CoreTelephony","CoreMedia","CoreMotion","EventKit","GLKit","iAd","ImageIO","MediaPlayer","MessageUI","MobileCoreServices","QuartzCore","Security","Social","StoreKit","SystemConfiguration","WatchConnectivity","JavaScriptCore"   # 使用到的系统框架
+
+  s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
 
   s.libraries = "c++","sqlite3","xml2","z"
 
@@ -47,7 +54,8 @@ Pod::Spec.new do |s|
 
   # s.source_files  = "LmMobSDK-Demo", "LmMobSDK-Demo/**/*.{h,m}"  #需要托管的源代码路径
   s.source_files = 'LmMobSDK-Demo/**/*'  #需要托管的源代码路径
-  s.public_header_files = 'LmMobSDK-Demo/**/*.h'
+  s.public_header_files = 'LmMobSDK-Demo/**/Frameworks/LmMobSDK.h'
+  
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
