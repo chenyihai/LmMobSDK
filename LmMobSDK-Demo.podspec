@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  # s.source_files = '**/LmMobSDK/*.{h,m}''  #需要托管的源代码路径
+  # s.source_files = '**/LmMobSDK/*.{h,m}'  #需要托管的源代码路径
   s.source_files = '**/LmMobSDK/*'
 
   s.resources = ['**/LmMobSDK/Assets/*']
