@@ -16,10 +16,9 @@ Pod::Spec.new do |s|
   #描述
   s.description      = <<-DESC
   帮助开发者在开发项目时可以通过有效的第三方来更好更快的完善自己的激励视频，实现游戏变现，增加开发者收益。
-                       DESC          
+                       DESC 
+
   s.homepage     = "https://github.com/chenyihai/LmMobSDK-Demo"   #项目主页，不是git地址
-
-
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -39,7 +38,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
 
-  s.vendored_libraries = 'LmMobSDK-Demo/libLmMobSDK.a'
+  s.vendored_libraries = 'LmMobSDK-Demo/LmMobSDK/libLmMobSDK.a'
 
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
