@@ -13,7 +13,10 @@ Pod::Spec.new do |s|
   s.name         = "LmMobSDK-Demo"                #存储库名称
   s.version      = "1.0.0"                        #版本号，与tag值一致
   s.summary      = "奖励视频广告变现优化"            #简介
-  s.description  = "帮助开发者在开发项目时可以通过有效的第三方来更好更快的完善自己的激励视频，实现游戏变现，增加开发者收益。"   #描述          
+  #描述
+  s.description      = <<-DESC
+  帮助开发者在开发项目时可以通过有效的第三方来更好更快的完善自己的激励视频，实现游戏变现，增加开发者收益。
+                       DESC          
   s.homepage     = "https://github.com/chenyihai/LmMobSDK-Demo"   #项目主页，不是git地址
 
 
@@ -36,25 +39,27 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
 
-  s.vendored_libraries = 'libLmMobSDK.a'
+  s.vendored_libraries = 'LmMobSDK-Demo/libLmMobSDK.a'
 
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
-  s.frameworks = "Accelerate", "AdSupport","AudioToolbox","AVFoundation","CFNetwork","CoreGraphics","CoreLocation","CoreTelephony","CoreMedia","CoreMotion","EventKit","GLKit","iAd","ImageIO","MediaPlayer","MessageUI","MobileCoreServices","QuartzCore","Security","Social","StoreKit","SystemConfiguration","WatchConnectivity","JavaScriptCore"   # 使用到的系统框架
+  s.frameworks = 'Accelerate', 'AdSupport','AudioToolbox','AVFoundation','CFNetwork','CoreGraphics','CoreLocation','CoreTelephony','CoreMedia','CoreMotion','EventKit','GLKit','iAd','ImageIO','MediaPlayer','MessageUI','MobileCoreServices','QuartzCore','Security','Social','StoreKit','SystemConfiguration','WatchConnectivity','JavaScriptCore'   # 使用到的系统框架
 
   s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
 
-  s.libraries = "c++","sqlite3","xml2","z"
+  s.libraries = 'stdc++','sqlite3','xml2','z'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/chenyihai/LmMobSDK-Demo.git", :tag => "1.0.0" }  #存储库的git地址，以及tag值
+  s.source       = { :git => "https://github.com/chenyihai/LmMobSDK-Demo.git", :tag => s.version }  #存储库的git地址，以及tag值
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  # s.source_files  = "LmMobSDK-Demo", "LmMobSDK-Demo/**/*.{h,m}"  #需要托管的源代码路径
-  s.source_files = 'LmMobSDK-Demo/**/*'  #需要托管的源代码路径
-  s.public_header_files = 'LmMobSDK-Demo/**/Frameworks/LmMobSDK.h'
+  s.source_files = 'LmMobSDK-Demo/LmMobSDK/*.{h,m}'  #需要托管的源代码路径
+
+  s.resources = ['LmMobSDK-Demo/LmMobSDK/Assets/*']
+  
+  s.public_header_files = 'LmMobSDK-Demo/**/LmMobSDK.h'
   
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
