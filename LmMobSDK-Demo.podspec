@@ -34,10 +34,6 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"   #支持的平台和版本号
 
-  s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
-
-  s.vendored_libraries = 'libLmMobSDK.a'
-
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
   s.frameworks = 'Accelerate', 'AdSupport','AudioToolbox','AVFoundation','CFNetwork','CoreGraphics','CoreLocation','CoreTelephony','CoreMedia','CoreMotion','EventKit','GLKit','iAd','ImageIO','MediaPlayer','MessageUI','MobileCoreServices','QuartzCore','Security','Social','StoreKit','SystemConfiguration','WatchConnectivity','JavaScriptCore'   # 使用到的系统框架
@@ -45,6 +41,10 @@ Pod::Spec.new do |s|
   s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
 
   s.libraries = 'stdc++','sqlite3','xml2','z'
+
+  s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
+
+  s.vendored_libraries = 'libLmMobSDK.a'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
