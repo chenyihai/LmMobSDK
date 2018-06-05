@@ -36,6 +36,10 @@ Pod::Spec.new do |s|
 
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
+  s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
+
+  s.vendored_libraries = 'libLmMobSDK.a'
+
   s.frameworks = 'Accelerate', 'AdSupport','AudioToolbox','AVFoundation','CFNetwork','CoreGraphics','CoreLocation','CoreTelephony','CoreMedia','CoreMotion','EventKit','GLKit','iAd','ImageIO','MediaPlayer','MessageUI','MobileCoreServices','QuartzCore','Security','Social','StoreKit','SystemConfiguration','WatchConnectivity','JavaScriptCore'   # 使用到的系统框架
 
   s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
@@ -56,9 +60,7 @@ Pod::Spec.new do |s|
   
   s.public_header_files = '**/LmMobSDK/LmMobSDK.h'
 
-  s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
-
-  s.vendored_libraries = 'LmMobSDK-Demo/LmMobSDK/libLmMobSDK.a'
+  
   
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
