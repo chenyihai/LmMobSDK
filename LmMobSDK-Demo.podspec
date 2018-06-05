@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #描述
   s.description      = "帮助开发者在开发项目时可以通过有效的第三方来更好更快的完善自己的激励视频，实现游戏变现，增加开发者收益。"
                       
-  s.homepage     = "https://github.com/chenyihai/LmMobSDK-Demo"   #项目主页，不是git地址
+  s.homepage     = "http://www.lmjoy.cn/"   #项目主页，不是git地址
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -36,9 +36,9 @@ Pod::Spec.new do |s|
 
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
-  s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
+  s.vendored_frameworks = "LmMobSDK/frameworks/VungleSDK.framework","LmMobSDK/frameworks/AdColony.framework","LmMobSDK/frameworks/Centrixlink.framework","LmMobSDK/frameworks/Chartboost.framework","LmMobSDK/frameworks/MVSDK.framework","LmMobSDK/frameworks/MVSDKReward.framework","LmMobSDK/frameworks/UnityAds.framework"
 
-  s.vendored_libraries = 'libLmMobSDK.a'
+  s.vendored_libraries = "LmMobSDK/libLmMobSDK.a"
 
   s.frameworks = 'Accelerate', 'AdSupport','AudioToolbox','AVFoundation','CFNetwork','CoreGraphics','CoreLocation','CoreTelephony','CoreMedia','CoreMotion','EventKit','GLKit','iAd','ImageIO','MediaPlayer','MessageUI','MobileCoreServices','QuartzCore','Security','Social','StoreKit','SystemConfiguration','WatchConnectivity','JavaScriptCore'   # 使用到的系统框架
 
@@ -53,14 +53,12 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  # s.source_files = '**/LmMobSDK/*.{h,m}'  #需要托管的源代码路径
-  s.source_files = '**/LmMobSDK/*'
+  s.source_files  = "LmMobSDK", "LmMobSDK/**/*.{h,m}"
 
-  s.resources = ['**/LmMobSDK/Assets/*']
+  s.resources = "LmMobSDK/Assets/*"
   
-  s.public_header_files = '**/LmMobSDK/LmMobSDK.h'
+  s.public_header_files = "LmMobSDK/LmMobSDK.h"
 
-  
   
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
