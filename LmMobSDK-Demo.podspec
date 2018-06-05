@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
 
   s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
 
-  s.libraries = 'stdc++','sqlite3','xml2','z'
+  s.libraries = 'c++','sqlite3','xml2','z'
 
   s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
 
