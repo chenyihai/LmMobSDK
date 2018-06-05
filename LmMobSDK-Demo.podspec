@@ -42,9 +42,6 @@ Pod::Spec.new do |s|
 
   s.libraries = 'c++','sqlite3','xml2','z'
 
-  s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
-
-  s.vendored_libraries = 'libLmMobSDK.a'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -58,6 +55,10 @@ Pod::Spec.new do |s|
   s.resources = ['**/LmMobSDK/Assets/*']
   
   s.public_header_files = '**/LmMobSDK/LmMobSDK.h'
+
+  s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
+
+  s.vendored_libraries = 'LmMobSDK-Demo/LmMobSDK/libLmMobSDK.a'
   
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
