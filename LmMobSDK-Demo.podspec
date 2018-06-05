@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = 'VungleSDK.framework','AdColony.framework','Centrixlink.framework','Chartboost.framework','MVSDK.framework','MVSDKReward.framework','UnityAds.framework'
 
-  s.vendored_libraries = 'LmMobSDK-Demo/LmMobSDK/libLmMobSDK.a'
+  s.vendored_libraries = 'libLmMobSDK.a'
 
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
@@ -52,9 +52,10 @@ Pod::Spec.new do |s|
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files = 'LmMobSDK-Demo/LmMobSDK/*.{h,m}'  #需要托管的源代码路径
+  # s.source_files = 'LmMobSDK-Demo/**/*.{h,m}'  #需要托管的源代码路径
+  s.source_files = 'LmMobSDK-Demo/**/*'
 
-  s.resources = ['LmMobSDK-Demo/LmMobSDK/Assets/*']
+  s.resources = ['LmMobSDK-Demo/**/Assets/*']
   
   s.public_header_files = 'LmMobSDK-Demo/**/LmMobSDK.h'
   
