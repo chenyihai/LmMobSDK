@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/chenyihai/LmMobSDK.git", :tag => s.version }  
   s.source_files  = "LmMobSDK", "LmMobSDK/**/*.{h,m}"
 
-  s.resources = 'LmMobSDK/Assets/*'
+  s.resources = '**/Assets/*'
 
   s.public_header_files = '**/LmMobSDK.h'
 
