@@ -32,7 +32,9 @@ Pod::Spec.new do |s|
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.platform     = :ios, "8.0"   #支持的平台和版本号
+  # s.platform     = :ios, "8.0"   #支持的平台和版本号
+
+  s.ios.deployment_target = '8.0' 
 
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 
