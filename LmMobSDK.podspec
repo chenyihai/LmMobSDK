@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description      = "帮助开发者在开发项目时可以通过有效的第三方来更好更快的完善自己的激励视频，实现游戏变现，增加开发者收益."                 
   s.homepage     = "http://www.lmjoy.cn/"  
    
-  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "yihai" => "chenyihai.2008@163.com" }  
 
   s.ios.deployment_target = '8.0' 
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/chenyihai/LmMobSDK.git", :tag => s.version }  
   s.source_files  = "LmMobSDK", "LmMobSDK/**/*.{h,m}"
 
-  s.resources = '**/Assets/*'
+  s.resources = ['**/Assets/*']
 
   s.public_header_files = '**/LmMobSDK.h'
 
