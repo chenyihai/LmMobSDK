@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/chenyihai/LmMobSDK-Demo.git", :tag => s.version }  
   s.source_files  = "LmMobSDK", "LmMobSDK/**/*.{h,m}"
-  s.resources = "LmMobSDK/Assets/*"
+  s.resources = "LmMobSDK/Assets/LmMobStartedIcon.png","LmMobSDK/Assets/LmMobUnstartedIcon.png","LmMobSDK/Assets/UnityAds.bundle"
   s.public_header_files = "LmMobSDK/LmMobSDK.h"
 
   s.requires_arc = true    
