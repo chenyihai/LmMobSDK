@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
   s.libraries = 'c++','sqlite3','xml2','z'
 
-  s.source       = { :git => "https://github.com/chenyihai/LmMobSDK.git", :tag => s.version }  
+  s.source       = { :git => "https://github.com/chenyihai/LmMobSDK-iOS.git", :tag => s.version }  
   s.source_files  = "LmMobSDK", "LmMobSDK/**/*.{h,m}"
 
   s.resources = '**/Assets/*.{png,bundle}'
