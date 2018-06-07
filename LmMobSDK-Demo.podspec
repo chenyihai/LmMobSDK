@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.name         = "LmMobSDK-Demo"                #存储库名称
+  s.name         = "LmMobSDK"                #存储库名称
   s.version      = "1.0.0"                        #版本号，与tag值一致
   s.summary      = "奖励视频广告变现优化"            #简介
   #描述
