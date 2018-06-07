@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = 'LmMobSDK/frameworks/VungleSDK.framework','LmMobSDK/frameworks/AdColony.framework','LmMobSDK/frameworks/Centrixlink.framework','LmMobSDK/frameworks/Chartboost.framework','LmMobSDK/frameworks/MVSDK.framework','LmMobSDK/frameworks/MVSDKReward.framework','LmMobSDK/frameworks/UnityAds.framework'
 
-  s.vendored_libraries = 'LmMobSDK/libLmMobSDK.a'
+  s.vendored_libraries = '**/libLmMobSDK.a'
   
   s.frameworks = 'Accelerate', 'AdSupport','AudioToolbox','AVFoundation','CFNetwork','CoreGraphics','CoreLocation','CoreTelephony','CoreMedia','CoreMotion','EventKit','GLKit','iAd','ImageIO','MediaPlayer','MessageUI','MobileCoreServices','QuartzCore','Security','Social','StoreKit','SystemConfiguration','WatchConnectivity','JavaScriptCore'   
   s.weak_framework = 'WebKit', 'UIKit', 'Foundation'
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.source_files  = "LmMobSDK", "LmMobSDK/**/*.{h,m}"
   s.resources = "LmMobSDK/Assets/LmMobStartedIcon.png","LmMobSDK/Assets/LmMobUnstartedIcon.png","LmMobSDK/Assets/UnityAds.bundle"
 
-  s.public_header_files = 'LmMobSDK/LmMobSDK.h'
+  s.public_header_files = '**/LmMobSDK.h'
 
   s.requires_arc = true 
 
