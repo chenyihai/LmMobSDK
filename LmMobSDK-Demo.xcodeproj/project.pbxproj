@@ -154,11 +154,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843D260E20C62C9400416D6E /* libLmMobSDK.a in Frameworks */,
 				8458408F2090367E0086D399 /* GameController.framework in Frameworks */,
 				8458408D2090362F0086D399 /* UIKit.framework in Frameworks */,
 				8458408B209036270086D399 /* JavaScriptCore.framework in Frameworks */,
 				845840892090361F0086D399 /* WebKit.framework in Frameworks */,
-				843D260E20C62C9400416D6E /* libLmMobSDK.a in Frameworks */,
 				84584087209036170086D399 /* WatchConnectivity.framework in Frameworks */,
 				84584085209036100086D399 /* SystemConfiguration.framework in Frameworks */,
 				843D262120C62D2600416D6E /* MVSDK.framework in Frameworks */,
@@ -671,17 +671,12 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LmMobSDK/Frameworks",
 					"$(PROJECT_DIR)/LmMobSDK/frameworks",
 				);
 				INFOPLIST_FILE = "LmMobSDK-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LmMobSDK/Frameworks/AppnextLib",
-					"$(PROJECT_DIR)/LmMobSDK/Frameworks/UMVideoSDK",
-					"$(PROJECT_DIR)/LmMobSDK/Frameworks/LMVideoSDK",
-					"$(PROJECT_DIR)/LmMobSDK/Frameworks",
 					"$(PROJECT_DIR)/LmMobSDK",
 				);
 				OTHER_LDFLAGS = (
@@ -706,17 +701,12 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LmMobSDK/Frameworks",
 					"$(PROJECT_DIR)/LmMobSDK/frameworks",
 				);
 				INFOPLIST_FILE = "LmMobSDK-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LmMobSDK/Frameworks/AppnextLib",
-					"$(PROJECT_DIR)/LmMobSDK/Frameworks/UMVideoSDK",
-					"$(PROJECT_DIR)/LmMobSDK/Frameworks/LMVideoSDK",
-					"$(PROJECT_DIR)/LmMobSDK/Frameworks",
 					"$(PROJECT_DIR)/LmMobSDK",
 				);
 				OTHER_LDFLAGS = (
