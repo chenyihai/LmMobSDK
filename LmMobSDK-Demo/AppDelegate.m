@@ -19,10 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
-    // 开发者向SDK方申请获取的key， 测试的 eac6500c-33a6-4d8d-afa4-def79935f9c1
-    //芝麻互娱 9302013f-7348-4938-995c-1e27a49ce500
-    
+    /*
+     * 测试appkey eac6500c-33a6-4d8d-afa4-def79935f9c1
+     * 时光录音本  9302013f-7348-4938-995c-1e27a49ce500
+     * 银河掠夺者  6cf187f7-8996-4714-8e3e-6b23773c95be
+     */
+    // 开发者向SDK方申请获取的key
     NSString * appkey = @"9302013f-7348-4938-995c-1e27a49ce500";//请填写实际获取的appkey
     
     //

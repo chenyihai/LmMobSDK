@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "LmMobSDK"                
   s.version      = "1.0.1"                        
-  s.summary      = "奖励视频广告变现优化"           
+  s.summary      = "蓝莓互娱 提供的iOS端的SDK."           
   s.description      = "帮助开发者在开发项目时可以通过有效的第三方来更好更快的完善自己的激励视频，实现游戏变现，增加开发者收益."                 
   s.homepage     = "http://www.lmjoy.cn/"  
    
